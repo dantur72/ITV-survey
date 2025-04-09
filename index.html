@@ -1,31 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>ITV Survey </title>
+  <title>ITV consumer satisfaction survey </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 3rem;
-      background-color: #f9f9f9;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
-    h1 {
-      color: #333;
+    .container {
+      text-align: center;
+    }
+    .qr {
+      margin-top: 2rem;
+    }
+    img {
+      width: 200px;
+      height: 200px;
     }
     p {
-      color: #666;
+      font-size: 1rem;
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to the ITV survey </h1>
-  <p>Click the button below to report your experience </p>
-
-  <!-- ElevenLabs Agent Widget -->
-  <elevenlabs-convai agent-id="fK98aQ6QUKcOr6nfHLpF"></elevenlabs-convai>
-  <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+  <div class="container">
+    <h1>Welcome to the ITV coffee experience survey</h1>
+    <p>Tell us how your drink turned out</p>
+    <p><strong>Just tap the mic and speak — we’ll take it from there.</strong></p>
+    <elevenlabs-convai agent-id="fK98aQ6QUKcOr6nfHLpF"></elevenlabs-convai>
+    <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+    <div class="qr">
+      <img src="latte_macchiato.jpg"/>
+      <p></p>
+    </div>
+  </div>
 </body>
 </html>
